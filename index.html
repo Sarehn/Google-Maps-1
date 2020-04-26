@@ -2,10 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Google Maps 1</title>
+    <title>Google Maps API Esercizio</title>
+    <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <style media="screen">
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      .map{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC9sQ7MMyAheGzJNE5GcQa5dNmifn5xn8&sensor=false" charset="utf-8"></script>
     <script src="code.js" charset="utf-8"></script>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="map" class="map">
+    </div>
   </body>
 </html>
