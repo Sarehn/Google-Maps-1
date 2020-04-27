@@ -1,5 +1,13 @@
 var map;
 
+function displayCoordinates(pnt) {
+      var lat = pnt.lat();
+      lat = lat.toFixed(4);
+      var lng = pnt.lng();
+      lng = lng.toFixed(4);
+      console.log("Latitude: " + lat + "  Longitude: " + lng);
+}
+
 window.onload = function() {
   var opt =
   {
@@ -9,4 +17,8 @@ window.onload = function() {
   }
 
   var map = new google.maps.Map(document.getElementById('map'),opt);
+
+  google.maps.event.addListener(map, 'mousemove', function (event) {
+              displayCoordinates(event.latLng);
+  });
 }
