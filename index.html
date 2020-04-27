@@ -8,6 +8,15 @@
         margin: 0;
         padding: 0;
       }
+      .coords{
+        color: white;
+        display: flex;
+        position: fixed;
+        top: 92.7%;
+        left: 82%;
+        width: 200px;
+        height: 50px;
+      }
       .map{
         position: absolute;
         height: 100%;
@@ -18,7 +27,14 @@
     <script src="code.js" charset="utf-8"></script>
   </head>
   <body>
-    <div id="map" class="map">
+    <div id="map" class="map"></div>
+    <div class="coords">
+      <div class="lon">
+        <p id="longitude"></p>
+      </div>
+      <div class="lat">
+        <p id="latitude"></p>
+      </div>
     </div>
   </body>
 </html>
